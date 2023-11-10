@@ -1,4 +1,6 @@
 ## Personal Blog Website
 
 ### ToDo
-1. Render static markdown from /posts
+- [] Setup header and home page with theme
+- [] Light and dark mode
+- [] Render static markdown from /posts
