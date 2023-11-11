@@ -4,7 +4,6 @@ import Header from './components/Header'
 
 function App() {
   const [darkMode, setDarkMode] = createSignal(false)
-  console.log(window.localStorage.getItem('DarkMode') === 'true')
 
   if (window.localStorage.getItem('DarkMode') === 'true') {
     setDarkMode(true)
@@ -24,17 +23,10 @@ function App() {
       <div
         class={
           (darkMode() ? 'dark-mode' : 'light-mode') +
-          ' h-screen flex flex-col justify-center items-center'
+          ' h-screen flex flex-col items-center'
         }
       >
-        <p>
-        Blog Init Bruv
-        </p>
-
-        <button onclick={() => setDarkMode(!darkMode())}>
-          Dark Mode
-        </button>
-        <Header />
+        <Header darkMode={darkMode()} setDarkMode={setDarkMode}/>
       </div>
     </>
   )
