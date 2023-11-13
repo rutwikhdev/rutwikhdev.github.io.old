@@ -9,5 +9,11 @@ export default {
     extend: {},
   },
   plugins: [],
+  darkMode: 'class',
+  extend: {
+    fontFamily: {
+      ibmplex: ["ibmplex", "monospace"],
+    },
+  },
 }
 
