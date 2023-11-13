@@ -1,6 +1,9 @@
 import { createEffect, createSignal } from 'solid-js'
+import { Route, Router, Routes } from "@solidjs/router"
 
 import Header from './components/Header'
+import Post from './components/Post'
+import Home from './pages/Home'
 
 function App() {
   const [darkMode, setDarkMode] = createSignal(false)
@@ -12,21 +15,29 @@ function App() {
   createEffect(() => {
     if (darkMode() === true) {
       document.querySelector('html')!.classList.add('dark')
+      document.querySelector('html')!.classList.add('dark-mode')
     } else {
       document.querySelector('html')!.classList.remove('dark')
+      document.querySelector('html')!.classList.remove('dark-mode')
+      document.querySelector('html')!.classList.add('light-mode')
     }
     window.localStorage.setItem('DarkMode', JSON.stringify(darkMode()))
   })
 
   return (
     <>
-      <div
-        class={
-          (darkMode() ? 'dark-mode' : 'light-mode') +
-          ' h-screen flex flex-col items-center'
-        }
-      >
-        <Header darkMode={darkMode()} setDarkMode={setDarkMode}/>
+      <div class='flex flex-col items-center'>
+        <div class="container px-36 text-lg">
+          <Header darkMode={darkMode()} setDarkMode={setDarkMode}/>
+          {/* components go here */}
+          <Router>
+            <Routes>
+              <Route path="/" component={Home} />
+              <Route path="/blog" component={Home} />
+              <Route path="/blog/:name" component={Post} />
+            </Routes>
+          </Router>
+        </div>
       </div>
     </>
   )
