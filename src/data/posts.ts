@@ -1,27 +1,21 @@
-{
-  "posts": [
+const Data = {
+  posts: [
+    {
+      "filename": "blog-init-bruv",
+      "title": "Blog Init Bruv",
+      "subtitle": "What is this blog for and why do I need one",
+      "date": "14-11-2023",
+      "latest": true
+    },
     {
       "filename": "mysterious-world-of-mushrooms",
       "title": "Mysterious World of Mushrooms",
       "subtitle": "Why do mushrooms have their own kingdom fungi",
       "date": "30-11-2023",
       "latest": true
-    },
-    {
-      "filename": "backpacking-through-europe",
-      "title": "Backpacking through Europe",
-      "subtitle": "A guide to budget traveling on the the most expensive continent",
-      "date": "30-11-2023",
-      "latest": true
-    },
-    {
-      "filename": "mysterious-world-of-mushrooms",
-      "title": "Mysterious World of Mushrooms",
-      "subtitle": "A walk in the woods",
-      "date": "2017-10-01"
     }
   ],
-  "projects": [
+  projects: [
     {
       "filename": "mysterious-world-of-mushrooms",
       "source": "https://github.com/rutwikhdev",
@@ -62,5 +56,6 @@
       "home": true
     }
   ]
-}
+};
 
+export default Data;

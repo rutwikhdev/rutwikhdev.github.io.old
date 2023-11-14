@@ -5,7 +5,7 @@ import Button from "./Button";
 function Grid(props: { items: any }) {
   return (
     <>
-      <div class="grid grid-cols-3 gap-4">
+      <div class="grid lg:grid-cols-3 sm:grid-cols-2 gap-4">
         <For each={props.items}>
           {(item) => {
             return (
@@ -24,7 +24,7 @@ function Grid(props: { items: any }) {
 
                   <div class="flex">
                     {item.filename ? (
-                      <Button label="Article" link={"/blog/" + item.filename} icon={true} classes="dark:bg-[#343434] mr-2 bg-neutral-200" />
+                      <Button label="Article" link={"/blog/" + item.filename} icon={true} classes="mr-2 bg-neutral-200 dark:bg-[#343434]" />
                     ) : (
                       ""
                     )}

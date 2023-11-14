@@ -12,7 +12,7 @@ function List(props: {items: any}) {
                 <br></br>
                 <span class="text-base font-normal text-neutral-600 dark:text-neutral-400">{item.subtitle}</span>
               </div>
-              <span class="text-base text-neutral-700 dark:text-green-200 font-mono">{item.date}</span>
+              <span class="hidden sm:block text-base text-neutral-700 dark:text-green-200 font-mono">{item.date}</span>
             </a>
           )
         }}

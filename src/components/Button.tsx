@@ -1,9 +1,8 @@
 import ExternalLinkIcon from "../assets/ExternalLinkIcon";
 
 function Button(props: { link: string, label: string, icon?: boolean, classes?: string }) {
-  const btnClasses = "flex py-2 px-4 rounded shadow-sm text-sm bg-gray-100 \
-    border border-gray-100 dark:border-neutral-800  \
-    hover:border hover:border-black dark:hover:border-gray-100 cursor-pointer w-fit dark:bg-neutral-800 " + props.classes
+  const btnClasses = "flex py-2 px-4 rounded shadow-sm text-sm bg-gray-100 border border-gray-100 dark:border-neutral-800 hover:border hover:border-black dark:hover:border-gray-100 cursor-pointer w-fit  " + props.classes
+    console.log(btnClasses)
 
   return (
     <>

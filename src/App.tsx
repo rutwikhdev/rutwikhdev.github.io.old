@@ -4,6 +4,8 @@ import { Route, Router, Routes } from "@solidjs/router"
 import Header from './components/Header'
 import Post from './components/Post'
 import Home from './pages/Home'
+import Blog from './pages/Blog'
+import Projects from './pages/Projects'
 
 function App() {
   const [darkMode, setDarkMode] = createSignal(false)
@@ -27,13 +29,14 @@ function App() {
   return (
     <>
       <div class='flex flex-col items-center'>
-        <div class="container px-36 text-lg">
+        <div class="container px-10 lg:px-42 xl:px-48 text-lg">
           <Header darkMode={darkMode()} setDarkMode={setDarkMode}/>
           {/* components go here */}
           <Router>
             <Routes>
               <Route path="/" component={Home} />
-              <Route path="/blog" component={Home} />
+              <Route path="/projects/" component={Projects} />
+              <Route path="/blog" component={Blog} />
               <Route path="/blog/:name" component={Post} />
             </Routes>
           </Router>
