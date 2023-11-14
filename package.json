@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build && npm run build-markdown",
-    "build-markdown": "cp -r ./src/posts ./dist/posts && cp -r ./src/data ./dist/data",
+    "build-markdown": "cp -r ./src/posts ./dist/posts",
     "preview": "vite preview"
   },
   "dependencies": {
