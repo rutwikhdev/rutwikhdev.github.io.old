@@ -6,6 +6,7 @@ import Post from './components/Post'
 import Home from './pages/Home'
 import Blog from './pages/Blog'
 import Projects from './pages/Projects'
+import About from './pages/About'
 
 function App() {
   const [darkMode, setDarkMode] = createSignal(false)
@@ -35,8 +36,9 @@ function App() {
           <Router>
             <Routes>
               <Route path="/" component={Home} />
-              <Route path="/projects/" component={Projects} />
+              <Route path="/about" component={About} />
               <Route path="/blog" component={Blog} />
+              <Route path="/projects/" component={Projects} />
               <Route path="/blog/:name" component={Post} />
             </Routes>
           </Router>

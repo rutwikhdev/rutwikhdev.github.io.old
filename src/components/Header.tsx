@@ -9,7 +9,8 @@ function Header(props: { darkMode: boolean, setDarkMode: (value: boolean) => voi
           <a href="/" class="text-lg font-black mb-4">🦄 Rutwik Hiwalkar</a>
           <ul>
             <For each={[
-              {label: "Blog", link: '/blog', color: "decoration-rose-400"},
+              {label: "About", link: '/about', color: "decoration-rose-400"},
+              {label: "Blog", link: '/blog', color: "decoration-green-400"},
               {label: "Projects", link: '/projects', color: "decoration-yellow-400"},
               {label: "Art", link: '/art', color: "decoration-blue-400"},
               {label: "Github", link: 'https://github.com/rutwikhdev', color: "decoration-indigo-400"}

@@ -13,7 +13,7 @@ function Home() {
     <>
       <div class="my-20 flex flex-col md:flex-row justify-between">
         <div class="flex flex-col my-auto">
-          <span class="text-5xl font-bold">Hey, I'm Rutwik!</span>
+          <span class="text-5xl font-black">Hey, I'm Rutwik!</span>
           <span class="my-8 font-semibold">Welcome to my digital jungle 🪴</span>
           <span class="text-lg font-medium">Human making 
           <Link class={linkClasses} label="open-source" link="/projects"></Link> software 
