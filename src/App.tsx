@@ -1,5 +1,5 @@
 import { createEffect, createSignal } from 'solid-js'
-import { Route, Router, Routes } from "@solidjs/router"
+import { Route, Routes } from "@solidjs/router"
 
 import Header from './components/Header'
 import Post from './components/Post'
@@ -33,7 +33,6 @@ function App() {
         <div class="container px-10 lg:px-42 xl:px-48 text-lg">
           <Header darkMode={darkMode()} setDarkMode={setDarkMode}/>
           {/* components go here */}
-          <Router>
             <Routes>
               <Route path="/" component={Home} />
               <Route path="/about" component={About} />
@@ -41,7 +40,6 @@ function App() {
               <Route path="/projects/" component={Projects} />
               <Route path="/blog/:name" component={Post} />
             </Routes>
-          </Router>
         </div>
       </div>
     </>

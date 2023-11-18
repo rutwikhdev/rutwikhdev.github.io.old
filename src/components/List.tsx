@@ -6,7 +6,7 @@ function List(props: {items: any}) {
       <For each={props.items}> 
         {(item) => {
           return (
-            <a href={"/blog/" + item.filename} class="py-2 group flex justify-between border-b-2 dark:border-neutral-800">
+            <a href={"/#/blog/" + item.filename} class="py-2 group flex justify-between border-b-2 dark:border-neutral-800">
               <div>
                 <span class="text-lg font-semibold group-hover:underline decoration-2">{item.title}</span>
                 <br></br>
