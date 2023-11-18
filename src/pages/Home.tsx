@@ -23,7 +23,7 @@ function Home() {
           I like drawing, sports, sci-fi, travelling and day-dreaming
           </span>
         </div>
-        <img src={Panda} alt="Panda" class="mx-10 mt-10 sm:mt-0 h-60 w-fit rounded-lg"/>
+        <img src={Panda} alt="Panda" class="mx-10 mt-10 sm:mt-0 h-64 w-auto rounded-lg"/>
       </div>
 
       <div class="my-4 flex justify-between">
