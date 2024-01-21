@@ -1,5 +1,5 @@
 function Link(props: { label: string, link: string, class?: string }) {
-  const redirectLink = props.link.includes('https') ? props.link : "/#" + props.link
+  const redirectLink = props.link.includes('https') || props.link.includes('assets') ? props.link : "/#" + props.link
 
   return (
     <a 

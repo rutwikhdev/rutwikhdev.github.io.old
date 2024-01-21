@@ -1,5 +1,6 @@
 import { For } from "solid-js"
 import Link from "./Link"
+import Resume from "../assets/resume.pdf"
 
 function Header(props: { darkMode: boolean, setDarkMode: (value: boolean) => void }) {
   return (
@@ -12,8 +13,9 @@ function Header(props: { darkMode: boolean, setDarkMode: (value: boolean) => voi
               {label: "About", link: '/about', color: "decoration-rose-400"},
               {label: "Blog", link: '/blog', color: "decoration-green-400"},
               {label: "Projects", link: '/projects', color: "decoration-yellow-400"},
-              {label: "Art", link: '/art', color: "decoration-blue-400"},
-              {label: "Github", link: 'https://github.com/rutwikhdev', color: "decoration-indigo-400"}
+              {label: "Github", link: 'https://github.com/rutwikhdev', color: "decoration-indigo-400"},
+              {label: "Resume", link: Resume, color: "decoration-blue-400"},
+              // {label: "Art", link: '/art', color: "decoration-blue-400"},
             ]}>
               {(link) => 
                 <Link 
