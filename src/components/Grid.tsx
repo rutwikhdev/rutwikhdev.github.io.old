@@ -23,8 +23,8 @@ function Grid(props: { items: any }) {
                   </div>
 
                   <div class="flex">
-                    {item.filename ? (
-                      <Button label="Article" link={"/blog/" + item.filename} icon={true} classes="mr-2 bg-neutral-200 dark:bg-[#343434]" />
+                    {item.blog ? (
+                      <Button label="Article" link={item.blog} icon={true} classes="mr-2 bg-neutral-200 dark:bg-[#343434]" />
                     ) : (
                       ""
                     )}

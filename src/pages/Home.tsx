@@ -4,10 +4,20 @@ import Button from "../components/Button";
 import List from "../components/List";
 import Grid from "../components/Grid";
 
-import Data from "../data/posts.ts"
+import Posts from "../data/posts.ts"
+import Projects from "../data/projects.ts"
 
 function Home() {
   const linkClasses = "underline decoration-indigo-400 hover:bg-indigo-400"
+  
+  const condition = (value: Object) => value["latest"] == true;
+
+  const filterData = (object: Object) => Object.keys(object)
+    .filter(key => condition(object[key]))
+    .map(key => object[key])
+
+  const filteredPosts = filterData(Posts)
+  const filteredProjects = filterData(Projects)
 
   return (
     <>
@@ -23,19 +33,19 @@ function Home() {
           I like drawing, sports, sci-fi, travelling and day-dreaming
           </span>
         </div>
-        <img src={Panda} alt="Panda" class="mx-10 mt-10 sm:mt-0 h-64 w-auto rounded-lg"/>
+        <img src={Panda} alt="Panda" class="mx-10 mt-10 sm:mt-0 sm:h-64 sm:w-auto rounded-lg"/>
       </div>
 
       <div class="my-4 flex justify-between">
         <span class="text-3xl font-semibold">Latest Posts</span>
         <Button label="View All" link="/blog" classes="dark:bg-neutral-800" />
       </div>
-      <List items={Data.posts.filter((post) => post.latest == true)}/>
+      <List items={filteredPosts}/>
       <div class="mt-20 my-4 flex justify-between">
         <span class="text-3xl font-semibold">Top Projects</span>
         <Button label="View All" link="/projects" classes="dark:bg-neutral-800" />
       </div>
-      <Grid items={Data.projects.filter((project) => project.home == true)} />
+      <Grid items={filteredProjects} />
     </>
   );
 }

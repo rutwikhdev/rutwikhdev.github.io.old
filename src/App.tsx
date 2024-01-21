@@ -41,6 +41,7 @@ function App() {
               <Route path="/blog/:name" component={Post} />
             </Routes>
         </div>
+        <br></br>
       </div>
     </>
   )

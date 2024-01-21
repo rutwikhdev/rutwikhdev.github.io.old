@@ -1,7 +1,9 @@
 import {  createSignal } from 'solid-js'
 
-import { useParams } from "@solidjs/router";
+import { useParams } from "@solidjs/router"
 import { Renderer, marked } from 'marked'
+
+import PostData from '../data/posts'
 
 import hljs from 'highlight.js'
 import 'highlight.js/styles/base16/gruvbox-dark-hard.css'
@@ -23,8 +25,12 @@ function Post() {
   const [post, setPost] = createSignal('')
 
   const renderer = new Renderer();
-  renderer.code = (code, language) => {
 
+  renderer.link = function (href, _, text) {
+    return `<a target="_blank" href="${href}">${text}` + '</a>';
+  }
+
+  renderer.code = (code, language) => {
   const validLang = !!(language && hljs.getLanguage(language));
 
   const highlighted = validLang
@@ -50,7 +56,13 @@ function Post() {
 
   return (
     <>
-      <div id="markdown" innerHTML={marked(post(), { gfm: true })}></div>
+      <div class="text-center text-4xl font-semibold mb-4">{ PostData[params.name]['title'] }</div>
+      <div class="text-center text-lg dark:text-gray-300 text-neutral-600 mb-10">
+          { PostData[params.name]['subtitle'] }
+      </div>
+      <div class="border-b dark:border-yellow-200 border-neutral-300 w-20 mb-20 m-auto"></div>
+      <div class="mx-20" id="markdown" innerHTML={marked(post(), { gfm: true })}></div>
+      <div class="border-b dark:border-yellow-200 border-neutral-300 w-20 my-20 m-auto"></div>
     </>
   )
 }

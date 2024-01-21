@@ -1,61 +1,11 @@
-const Data = {
-  posts: [
-    {
-      "filename": "blog-init-bruv",
-      "title": "Blog Init Bruv",
-      "subtitle": "What is this blog for and why do I need one",
-      "date": "14-11-2023",
-      "latest": true
-    },
-    {
-      "filename": "mysterious-world-of-mushrooms",
-      "title": "Mysterious World of Mushrooms",
-      "subtitle": "Why do mushrooms have their own kingdom fungi",
-      "date": "30-11-2023",
-      "latest": true
-    }
-  ],
-  projects: [
-    {
-      "filename": "mysterious-world-of-mushrooms",
-      "source": "https://github.com/rutwikhdev",
-      "title": "Mysterious World of Mushrooms",
-      "subtitle": "Why do mushrooms have their own kingdom fungi",
-      "date": "2023",
-      "home": true
-    },
-    {
-      "filename": "backpacking-through-europe",
-      "source": "https://github.com/rutwikhdev",
-      "title": "Backpacking through Europe",
-      "subtitle": "A guide to budget traveling on the the most expensive continent",
-      "date": "2023",
-      "home": true
-    },
-    {
-      "filename": "backpacking-through-europe",
-      "source": "https://github.com/rutwikhdev",
-      "title": "Backpacking through Europe",
-      "subtitle": "A guide to budget traveling on the the most expensive continent",
-      "date": "2023",
-      "home": true
-    },
-    {
-      "filename": "backpacking-through-europe",
-      "source": "https://github.com/rutwikhdev",
-      "title": "Backpacking through Europe",
-      "subtitle": "A guide to budget traveling on the the most expensive continent",
-      "date": "2023",
-      "home": true
-    },
-    {
-      "source": "https://github.com/rutwikhdev",
-      "title": "Journey through the Amazon", 
-      "subtitle": "A walk in the woods",
-      "date": "2017",
-      "home": true
-    }
-  ]
+const Posts = {
+ "blog-init-bruv": {
+   "filename": "blog-init-bruv",
+    "title": "Blog Init Bruv",
+    "subtitle": "What is this blog for and why do I need one",
+    "date": "14-11-2023",
+    "latest": true
+  },
 };
 
-export default Data;
+export default Posts;

@@ -6,7 +6,7 @@ function Button(props: { link: string, label: string, icon?: boolean, classes?: 
 
   return (
     <>
-      <a class={btnClasses} href={redirectLink}>
+      <a target="_blank" class={btnClasses} href={redirectLink}>
         <span class={props.icon ? "mr-2" : ""}>{props.label}</span> 
         {props.icon ? <ExternalLinkIcon /> : ""}
       </a>
