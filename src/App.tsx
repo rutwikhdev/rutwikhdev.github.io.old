@@ -35,7 +35,7 @@ function App() {
           {/* components go here */}
             <Routes>
               <Route path="/" component={Home} />
-              <Route path="/about" component={About} />
+              <Route path="/me" component={About} />
               <Route path="/blog" component={Blog} />
               <Route path="/projects/" component={Projects} />
               <Route path="/blog/:name" component={Post} />

@@ -41,7 +41,6 @@ function Post() {
   };
   marked.setOptions({ renderer: renderer })
 
-
   async function fetchMarkdownContent() {
     const path = (window.location.protocol === "http:" && window.location.port == "5173" ? "../src" : "") + "/posts/"
     try {
@@ -56,12 +55,13 @@ function Post() {
 
   return (
     <>
-      <div class="text-center text-4xl font-semibold mb-4">{ PostData[params.name]['title'] }</div>
-      <div class="text-center text-lg dark:text-gray-300 text-neutral-600 mb-10">
+      <div class="text-center text-3xl font-semibold mb-4">{ PostData[params.name]['title'] }</div>
+      <div class="text-center text-xl dark:text-gray-300 text-neutral-600 mb-2">
           { PostData[params.name]['subtitle'] }
       </div>
+      <div class="text-center text-base dark:text-gray-500 text-neutral-600 mb-10">Written on { PostData[params.name]['date'] }</div>
       <div class="border-b dark:border-yellow-200 border-neutral-300 w-20 mb-20 m-auto"></div>
-      <div class="mx-20" id="markdown" innerHTML={marked(post(), { gfm: true })}></div>
+      <div class="lg:mx-40" id="markdown" innerHTML={marked(post(), { gfm: true })}></div>
       <div class="border-b dark:border-yellow-200 border-neutral-300 w-20 my-20 m-auto"></div>
     </>
   )

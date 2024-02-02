@@ -10,7 +10,7 @@ function Header(props: { darkMode: boolean, setDarkMode: (value: boolean) => voi
           <a href="/" class="text-lg font-black mb-4">🦄 Rutwik Hiwalkar</a>
           <ul>
             <For each={[
-              {label: "About", link: '/about', color: "decoration-rose-400"},
+              {label: "About", link: '/me', color: "decoration-rose-400"},
               {label: "Blog", link: '/blog', color: "decoration-green-400"},
               {label: "Projects", link: '/projects', color: "decoration-yellow-400"},
               {label: "Github", link: 'https://github.com/rutwikhdev', color: "decoration-indigo-400"},
@@ -27,7 +27,7 @@ function Header(props: { darkMode: boolean, setDarkMode: (value: boolean) => voi
           </ul>
         </div>
         <button 
-          class="my-auto p-2 shadow hover:shadow-lg bg-white dark:bg-neutral-800 rounded"
+          class="my-auto p-3 px-4 shadow hover:shadow-lg bg-white dark:bg-neutral-800 rounded-full"
           onclick={() => props.setDarkMode(!props.darkMode)}
         >
           🚀
