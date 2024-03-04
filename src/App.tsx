@@ -28,8 +28,8 @@ function App() {
 
   return (
     <>
-      <div class='flex flex-col items-center'>
-        <div class="max-w-3xl w-full text-base">
+      <div class='flex flex-col items-center mb-20'>
+        <div class="max-w-3xl w-full text-base px-10 md:px-0">
           <Header darkMode={darkMode()} setDarkMode={setDarkMode}/>
           {/* components go here */}
             <Routes>
