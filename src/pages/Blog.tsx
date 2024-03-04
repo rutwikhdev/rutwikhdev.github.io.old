@@ -5,7 +5,7 @@ function Blog() {
   return (
     <div class="flex">
       <div class="flex flex-col w-full">
-        <h1 class="text-4xl font-bold mb-8">Writings</h1>
+        <h1 class="text-2xl font-bold mb-8">Writings</h1>
         <List items={Object.values(Post)} />
       </div>
     </div>

@@ -74,12 +74,12 @@ html {
 
 #markdown blockquote {
   margin: 1rem 0;
-  padding: 2px 16px;
-  border-left: 4px solid #cccccc;
+  padding: 0px 16px;
+  border-left: 4px solid rgb(163 230 53);
 }
 
 #markdown blockquote.dark {
-  border-left: 4px solid #cccccc;
+  border-left: 4px solid rgb(217 249 157);
 }
 
 #markdown a {

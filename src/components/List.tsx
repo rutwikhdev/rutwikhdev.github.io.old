@@ -8,11 +8,11 @@ function List(props: {items: any}) {
           return (
             <a href={"/#/blog/" + item.filename} class="py-2 group flex justify-between border-b-2 dark:border-neutral-800">
               <div>
-                <span class="text-lg font-semibold group-hover:underline decoration-2">{item.title}</span>
+                <span class="text-base font-semibold group-hover:underline decoration-2">{item.title}</span>
                 <br></br>
                 <span class="text-base font-normal text-neutral-600 dark:text-neutral-400">{item.subtitle}</span>
               </div>
-              <span class="hidden sm:block text-base text-neutral-500 dark:text-green-200 font-mono">{item.date}</span>
+              <span class="hidden sm:block text-sm text-neutral-500 dark:text-lime-200 font-mono">{item.date}</span>
             </a>
           )
         }}

@@ -13,10 +13,10 @@ function Grid(props: { items: any }) {
                 <div class="flex flex-col justify-between h-full">
 
                   <div class="flex flex-col">
-                    <span class="font-mono text-neutral-500 dark:text-yellow-300">
+                    <span class="font-mono text-sm text-neutral-500 dark:text-lime-200">
                       {item.date}
                     </span>
-                    <span class="font-base font-semibold my-2">{item.title}</span>
+                    <span class="text-base font-semibold my-2">{item.title}</span>
                     <span class="mb-4 text-base font-normal text-neutral-600 dark:text-neutral-400">
                       {item.subtitle}
                     </span>

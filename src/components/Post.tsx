@@ -60,9 +60,9 @@ function Post() {
           { PostData[params.name]['subtitle'] }
       </div>
       <div class="text-center text-base dark:text-gray-500 text-neutral-600 mb-10">Written on { PostData[params.name]['date'] }</div>
-      <div class="border-b dark:border-yellow-200 border-neutral-300 w-20 mb-20 m-auto"></div>
-      <div class="lg:mx-40" id="markdown" innerHTML={marked(post(), { gfm: true })}></div>
-      <div class="border-b dark:border-yellow-200 border-neutral-300 w-20 my-20 m-auto"></div>
+      <div class="border-b dark:border-lime-200 border-neutral-300 w-20 mb-20 m-auto"></div>
+      <div class="text-base" id="markdown" innerHTML={marked(post(), { gfm: true })}></div>
+      <div class="border-b dark:border-lime-200 border-neutral-300 w-20 my-20 m-auto"></div>
     </>
   )
 }

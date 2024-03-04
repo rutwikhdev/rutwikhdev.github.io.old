@@ -6,7 +6,6 @@ import Post from './components/Post'
 import Home from './pages/Home'
 import Blog from './pages/Blog'
 import Projects from './pages/Projects'
-import About from './pages/About'
 
 function App() {
   const [darkMode, setDarkMode] = createSignal(false)
@@ -30,12 +29,11 @@ function App() {
   return (
     <>
       <div class='flex flex-col items-center'>
-        <div class="container px-10 lg:px-42 xl:px-48 text-lg">
+        <div class="max-w-3xl w-full text-base">
           <Header darkMode={darkMode()} setDarkMode={setDarkMode}/>
           {/* components go here */}
             <Routes>
               <Route path="/" component={Home} />
-              <Route path="/me" component={About} />
               <Route path="/blog" component={Blog} />
               <Route path="/projects/" component={Projects} />
               <Route path="/blog/:name" component={Post} />
