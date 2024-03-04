@@ -9,7 +9,7 @@ So I'm sat here on a lazy Saturday morning comtemplating what to write about. Th
 
 Thought about starting a tech blog when I was in college, after giving this some thought and reading some of the stuff that's out there I immediately felt stupid and my knowledgebase was severely limited but 5 years later I can still see people writing about the same stupid things that I would think of. And yes even in the ChatGPT era other people including me are still reading these dumb blogs, because you can generate text but you cannot generate experiences. So writing about tech now is a no brainer. Other than this I'll write about my observations and rabbit hole researches on cool abstract topics.
 
-The truth is there is no format for this blog and I'm not confident I can deliver but that's okay. Been procastinating about starting a blog for a few years now, what really made me bite the bullet was this thing that I read somewhere. 👇
+The truth is there is no format for this blog and I'm not confident I can deliver but that's okay. Been procastinating about starting a blog for a few years now, what really made me bite the bullet was this thing that I read somewhere.
 
 > "Stay afraid, but do it anyway. What's important is the action. You don't have to wait to be confident. Just do it and eventually the confidence will follow."
 > - Carrie Fisher
